@@ -1,0 +1,143 @@
+.home {
+	height: 100vh;
+}
+.background {
+	position: absolute;
+	width: 100vw;
+	background-image: url("../images/pattern-bg.png");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	z-index: -1;
+}
+
+/* start top section */
+.top-section {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.top-section .title {
+	color: white;
+	font-weight: 800;
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+}
+.search-field {
+	width: 350px;
+	height: 50px;
+	text-align: center;
+	border-radius: 10px;
+}
+.search-field input {
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	border: none;
+	outline: none;
+	padding-left: 20px;
+	height: 100%;
+	width: 250px;
+}
+.search-field button {
+	border: none;
+	background-color: black;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 50px;
+	height: 100%;
+}
+/* start view section */
+.view-section {
+	position: absolute;
+	top: 150px;
+	background-color: white;
+	padding: 20px;
+	margin: 20px 20px 0 20px;
+	border-radius: 12px;
+	text-align: center;
+	z-index: 401;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	width: 300px;
+}
+.info {
+	margin: 10px 0 20px 0;
+	width: 100%;
+	text-transform: uppercase;
+}
+.view-section p {
+	margin-bottom: 5px;
+	color: var(--Dark-Gray);
+	text-transform: uppercase;
+}
+.view-section h3 {
+	color: var(--Very-Dark-Gray);
+	text-transform: uppercase;
+}
+
+.map {
+	margin-top: 150px;
+	background-color: red;
+	width: 100vw;
+	height: 500px;
+}
+
+@media only screen and (min-width: 1440px) {
+	.background {
+		position: absolute;
+		width: 100vw;
+		background-image: url("../images/pattern-bg.png");
+		background-size: cover;
+		background-position: center;
+		height: 400px;
+		z-index: -1;
+	}
+	.top-section {
+		padding-top: 100px;
+	}
+	.search-field {
+		width: 500px;
+		height: 50px;
+		text-align: center;
+		border-radius: 10px;
+	}
+	.search-field input {
+		border-bottom-left-radius: 10px;
+		border-top-left-radius: 10px;
+		border: none;
+		outline: none;
+		padding-left: 20px;
+		height: 100%;
+		width: 450px;
+	}
+	.search-field button {
+		border: none;
+		background-color: black;
+		border-bottom-right-radius: 10px;
+		border-top-right-radius: 10px;
+		width: 50px;
+		height: 100%;
+	}
+	.map {
+		margin-top: 200px;
+		background-color: red;
+		width: 100vw;
+		height: 800px;
+	}
+	.view-section {
+		top: 325px;
+		width: 900px;
+		display: flex;
+	}
+	.info {
+		text-align: start;
+		text-transform: uppercase;
+		border-right: 1px solid var(--Dark-Gray);
+		margin-right: 12px;
+	}
+	.info:last-child {
+		border-right: none;
+	}
+}
