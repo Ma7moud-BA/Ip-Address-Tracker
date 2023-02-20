@@ -12,10 +12,11 @@ function App() {
 	const [timeZone, setTimeZone] = useState("");
 	const [isp, setIsp] = useState("");
 	const [position, setPosition] = useState([31.0, 35.94503]);
-
+	console.log(import.meta.env.VITE_APP_API_KEY);
 	const inputRef = useRef();
-	const BASE_URL =
-		"https://geo.ipify.org/api/v2/country,city?apiKey=at_mflYoW1FBvpJnrtZkIVLGoPfGEYYt";
+	const BASE_URL = `https://geo.ipify.org/api/v2/country,city?apiKey=${
+		import.meta.env.VITE_APP_API_KEY
+	}`;
 	useEffect(() => {
 		axios.get(BASE_URL).then((response) => {
 			const data = response.data;
